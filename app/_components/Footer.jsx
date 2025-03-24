@@ -2,6 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
+    const handleSmoothScroll = (e, targetId) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
     return (
         <footer className="bg-primary">
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 md:px-[4.4rem] lg:px-10 lg:pt-20">
@@ -25,7 +32,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#service">
+                                    <Link className="text-white text-[17px] transition" href="#service" onClick={(e) => handleSmoothScroll(e, "service")}>
                                         Service
                                     </Link>
                                 </li>
@@ -33,7 +40,7 @@ const Footer = () => {
                                     <Link className="text-white text-[17px] transition" href="#">Portfolio</Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#pricing">
+                                    <Link className="text-white text-[17px] transition" href="#pricing" onClick={(e) => handleSmoothScroll(e, "pricing")}>
                                         Our Pricing
                                     </Link>
                                 </li>

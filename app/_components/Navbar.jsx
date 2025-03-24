@@ -7,6 +7,15 @@ import Link from "next/link";
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const handleSmoothScroll = (e, targetId) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            setIsMenuOpen(false);
+        }
+    };
+
     return (
         <header className="bg-[#020106]">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -15,16 +24,15 @@ const Navbar = () => {
                         Nearby TV Internet
                     </Link>
                     <nav
-                        className={`absolute md:static top-28 left-0 w-full md:w-auto bg-[#020106] md:bg-transparent md:flex items-center justify-center md:opacity-100 transition-opacity duration-300 ease-in-out ${
-                            isMenuOpen ? "opacity-100" : "opacity-0 md:opacity-100 pointer-events-none md:pointer-events-auto"
-                        }`}
+                        className={`absolute md:static top-28 left-0 w-full md:w-auto bg-[#020106] md:bg-transparent md:flex items-center justify-center md:opacity-100 transition-opacity duration-300 ease-in-out ${isMenuOpen ? "opacity-100" : "opacity-0 md:opacity-100 pointer-events-none md:pointer-events-auto"
+                            }`}
                     >
                         <ul className="flex flex-col md:flex-row lg:items-center gap-6 md:gap-10 text-md px-4 py-4">
                             <li><a className="text-white transition hover:text-secondary" href="/"> Home </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#service"> Service </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#explore"> Explore </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#pricing"> Pricing </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#contact"> Contact </a></li>
+                            <li><a className="text-white transition hover:text-secondary" href="#service" onClick={(e) => handleSmoothScroll(e, "service")}> Service </a></li>
+                            <li><a className="text-white transition hover:text-secondary" href="#explore" onClick={(e) => handleSmoothScroll(e, "explore")}> Explore </a></li>
+                            <li><a className="text-white transition hover:text-secondary" href="#pricing" onClick={(e) => handleSmoothScroll(e, "pricing")}> Pricing </a></li>
+                            <li><a className="text-white transition hover:text-secondary" href="#contact" onClick={(e) => handleSmoothScroll(e, "contact")}> Contact </a></li>
                         </ul>
                     </nav>
                     <div className="hidden md:hidden lg:flex">
