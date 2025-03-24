@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.hero {
+  background: url("/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cardSec {
+  background: url("/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.priceSec .card {
+  background: url("/card-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.priceSec .card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+.bannerSec{
+  opacity: 0.8;
+  background: url("/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 60vh;
+}
+
+
+
+.slick-slide img {
+  display: block;
+  width: 50%;
+}
