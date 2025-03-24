@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <Navbar />
 
-
       <section className="hero bg-white lg:grid lg:h-fit lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="max-w-prose text-left">
@@ -32,13 +31,11 @@ export default function Home() {
         </div>
       </section>
 
-
       <div className="bg-primary py-10">
         <div className="mx-auto w-screen max-w-screen-xl">
           <LogoSlider />
         </div>
       </div>
-
 
       <section className="cardSec py-10 lg:py-20" id="service">
         <div className="mx-auto w-screen max-w-screen-xl">
@@ -63,9 +60,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
 
       <section className="priceSec bg-primary py-10 lg:py-20" id="pricing">
         <div className="mx-auto w-screen max-w-screen-xl">
@@ -213,11 +207,9 @@ export default function Home() {
         </div>
       </section>
 
-
       <section className="bannerSec flex items-center" id="explore">
         <h2 className="text-white text-4xl lg:text-5xl font-bold w-[600px] mx-auto lg:leading-[60px]">Connecting with the world with best internet and TV services</h2>
       </section>
-
 
       <section className="bg-primary" id="contact">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-5 md:px-[4.4rem] md:py-20 py-10 lg:px-16 lg:py-20">
@@ -306,9 +298,7 @@ export default function Home() {
         </div>
       </section>
 
-
       <Footer />
-
     </>
   );
 }
