@@ -13,13 +13,13 @@ export default function Home() {
       <section className="hero bg-white lg:grid lg:h-fit lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="max-w-prose text-left">
-            <h1 className="text-2xl leading-[35px] font-bold text-white sm:text-[40px] md:leading-[50px] lg:leading-[60px]">
+            <h1 className="text-2xl leading-[35px] font-bold text-white sm:text-[40px] md:leading-[50px] lg:leading-[55px]">
               Discover Incredible Cable TV and Internet Deals with Nearby TV Internet Plans!
             </h1>
-            <p className="mt-4 text-base text-pretty text-white sm:text-lg/relaxed">
+            <p className="mt-5 text-base text-pretty text-white sm:text-lg/relaxed">
               Are you ready to elevate your entertainment and internet experience? Look no further! Nearby TV Internet Plans is here to bring you the best deals around.
             </p>
-            <div className="mt-4 flex gap-4 sm:mt-6">
+            <div className="mt-5 flex gap-4 sm:mt-6">
               <a
                 className="inline-block rounded-full border border-secondary bg-secondary px-8 py-3 font-medium text-white shadow-sm transition-colors hover:bg-primary hover:border-white"
                 href="tel:+1-(877)653-3880"
