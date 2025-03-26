@@ -10,21 +10,22 @@ export default function Home() {
     <>
       <Navbar />
 
-      <section className="hero bg-white lg:grid lg:h-fit lg:place-content-center">
+      <section className="hero lg:grid lg:h-fit lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="max-w-prose text-left">
             <h1 className="text-2xl leading-[35px] font-bold text-white sm:text-[40px] md:leading-[50px] lg:leading-[55px]">
               Discover Incredible Cable TV and Internet Deals with Nearby TV Internet Plans!
             </h1>
-            <p className="mt-5 text-base text-pretty text-white sm:text-lg/relaxed">
+            <p className="mt-5 text-base text-pretty text-white sm:text-lg/relaxed py-10 lg:py-5">
               Are you ready to elevate your entertainment and internet experience? Look no further! Nearby TV Internet Plans is here to bring you the best deals around.
             </p>
             <div className="mt-5 flex gap-4 sm:mt-6">
               <a
-                className="inline-block rounded-full border border-secondary bg-secondary px-8 py-3 font-medium text-white shadow-sm transition-colors hover:bg-primary hover:border-white"
+                className="inline-flex items-center gap-2 rounded-full border border-secondary bg-secondary px-8 py-3 text-white hover:bg-transparent hover:bg-primary hover:border-white"
                 href="tel:+1-(877)653-3880"
               >
-                Get Started
+                <Phone />
+                <span className="text-sm font-semibold"> (877) 653-3880 </span>
               </a>
             </div>
           </div>
@@ -220,7 +221,7 @@ export default function Home() {
             <ul className="py-5 leading-[3]">
               <li className="flex gap-2 items-center"><Phone className="text-white" /> <Link href="tel:+1-(877)653-3880" className="text-white">(877)653-3880</Link></li>
               <li className="flex gap-2 items-center"><Mail className="text-white" /> <Link href="mailto:info@nearbytvinternet.com" className="text-white">info@nearbytvinternet.com</Link></li>
-              <li className="flex gap-2 items-center"><MapPin className="text-white" /> <p className="text-white">14402 W Bellfort St apt 132 Sugarland TX 77498</p></li>
+              <li className="flex gap-2 items-center"><MapPin className="text-white" /> <p className="text-white">8750 Point Park Dr Houston TX 77095</p></li>
             </ul>
             <div className="flex gap-5">
               <FacebookIcon className="bg-white rounded-md text-primary p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
@@ -236,7 +237,7 @@ export default function Home() {
                   id="Name"
                   name="name"
                   placeholder="Name"
-                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-gray-700 shadow-xs p-3"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
                   onChange={(e) => {
                     const value = e.target.value;
                     if (/^[A-Za-z\s]*$/.test(value)) {
@@ -252,7 +253,7 @@ export default function Home() {
                   id="Phone"
                   name="phone"
                   placeholder="Phone"
-                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-gray-700 shadow-xs p-3"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
                   onChange={(e) => {
                     const value = e.target.value;
                     if (/^[\d+\-()]*$/.test(value)) {
@@ -268,13 +269,13 @@ export default function Home() {
                   id="Email"
                   name="email"
                   placeholder="Email"
-                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-gray-700 shadow-xs p-3"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
               <div className="col-span-6">
-                <select id="Services" className="border border-gray-700 bg-transparent w-full p-3 rounded-md mt-1 text-gray-400" onChange={(e) => setService(e.target.value)}>
+                <select id="Services" className="border border-gray-700 w-full p-3 rounded-md mt-1 text-gray-400 bg-primary" onChange={(e) => setService(e.target.value)}>
                   <option value="Choose Service">Choose Service</option>
                   <option value="Cable Internet">Cable Internet</option>
                   <option value="Fiber Internet">Fiber Internet</option>
@@ -283,7 +284,7 @@ export default function Home() {
                 </select>
               </div>
               <div className="col-span-6">
-                <textarea id="Message" placeholder="Message" rows={4} className="w-full border border-gray-700 bg-transparent p-3 rounded-md mt-1" onChange={(e) => setMessage(e.target.value)} required></textarea>
+                <textarea id="Message" placeholder="Message" rows={4} className="text-white w-full border border-gray-700 bg-transparent p-3 rounded-md mt-1" onChange={(e) => setMessage(e.target.value)} required></textarea>
               </div>
 
               <div className="col-span-6">

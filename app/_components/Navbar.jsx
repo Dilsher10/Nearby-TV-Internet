@@ -17,22 +17,22 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-[#020106]">
+        <header className="bg-[#020106] sticky top-0 z-10">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-28 items-center justify-between">
+                <div className="flex h-24 items-center justify-between">
                     <Link className="block text-white font-bold text-2xl lg:text-3xl" href="/">
-                        Nearby TV Internet
+                    WS DYNAMICS LLC
                     </Link>
                     <nav
                         className={`absolute md:static top-28 left-0 w-full md:w-auto bg-[#020106] md:bg-transparent md:flex items-center justify-center md:opacity-100 transition-opacity duration-300 ease-in-out ${isMenuOpen ? "opacity-100" : "opacity-0 md:opacity-100 pointer-events-none md:pointer-events-auto"
                             }`}
                     >
                         <ul className="flex flex-col md:flex-row lg:items-center gap-6 md:gap-10 text-md px-4 py-4">
-                            <li><a className="text-white transition hover:text-secondary" href="/"> Home </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#service" onClick={(e) => handleSmoothScroll(e, "service")}> Service </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#explore" onClick={(e) => handleSmoothScroll(e, "explore")}> Explore </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#pricing" onClick={(e) => handleSmoothScroll(e, "pricing")}> Pricing </a></li>
-                            <li><a className="text-white transition hover:text-secondary" href="#contact" onClick={(e) => handleSmoothScroll(e, "contact")}> Contact </a></li>
+                            <li><a className="text-white transition font-semibold hover:text-secondary" href="/"> Home </a></li>
+                            <li><a className="text-white transition font-semibold hover:text-secondary" href="#service" onClick={(e) => handleSmoothScroll(e, "service")}> Service </a></li>
+                            <li><a className="text-white transition font-semibold hover:text-secondary" href="#explore" onClick={(e) => handleSmoothScroll(e, "explore")}> Explore </a></li>
+                            <li><a className="text-white transition font-semibold hover:text-secondary" href="#pricing" onClick={(e) => handleSmoothScroll(e, "pricing")}> Pricing </a></li>
+                            <li><a className="text-white transition font-semibold hover:text-secondary" href="#contact" onClick={(e) => handleSmoothScroll(e, "contact")}> Contact </a></li>
                         </ul>
                     </nav>
                     <div className="hidden md:hidden lg:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
                             href="tel:+1-(877)653-3880"
                         >
                             <Phone />
-                            <span className="text-sm font-medium"> (877) 653-3880 </span>
+                            <span className="text-sm font-semibold"> (877) 653-3880 </span>
                         </a>
                     </div>
                     <button

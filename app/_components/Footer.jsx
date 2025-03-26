@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 gap-1 lg:grid-cols-3">
                     <div>
                         <div className="flex justify-start text-white font-extrabold text-2xl sm:justify-start">
-                            <Link href="/">Nearby TV Internet</Link>
+                            <Link href="/">WS DYNAMICS LLC</Link>
                         </div>
                         <p className="mt-6 max-w-md text-left leading-relaxed text-white sm:max-w-xs sm:text-left">
                             We are affiliate and retail partners of AT&T, Xfinity and Comcast Fiber Internet service providers in the United states.
@@ -27,22 +27,22 @@ const Footer = () => {
                             <p className="text-2xl font-bold text-white mt-8 lg:mt-0 md:mt-0">Company</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link className="text-white text-[17px] transition" href="#service" onClick={(e) => handleSmoothScroll(e, "service")}>
                                         Service
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#">Portfolio</Link>
+                                    <Link className="text-white text-[17px] transition" href="#">
+                                        About Us
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link className="text-white text-[17px] transition" href="#pricing" onClick={(e) => handleSmoothScroll(e, "pricing")}>
                                         Our Pricing
                                     </Link>
+                                </li>
+                                <li>
+                                    <Link className="text-white text-[17px] transition" href="privacy-policy">Privacy Policy</Link>
                                 </li>
                             </ul>
                         </div>
@@ -50,6 +50,9 @@ const Footer = () => {
                         <div className="text-left sm:text-left gap-">
                             <p className="text-2xl font-bold text-white mt-8 lg:mt-0 md:mt-0">Service</p>
                             <ul className="mt-8 space-y-4 text-sm">
+                                <li>
+                                    <Link className="text-white text-[17px] transition" href="#">Satelite Tv</Link>
+                                </li>
                                 <li>
                                     <Link className="text-white text-[17px] transition" href="#">Broadband</Link>
                                 </li>
@@ -59,25 +62,22 @@ const Footer = () => {
                                 <li>
                                     <Link className="text-white text-[17px] transition" href="#">Netflik TV Box</Link>
                                 </li>
-                                <li>
-                                    <Link className="text-white text-[17px] transition" href="#">Satelite Tv</Link>
-                                </li>
                             </ul>
                         </div>
                         <div className="text-left sm:text-left gap-">
                             <p className="text-2xl font-bold text-white mt-8 lg:mt-0 md:mt-0">Social Media</p>
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#">Instagram</Link>
+                                    <Link className="text-white text-[17px] transition" href="#">Twitter</Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#">Twitter</Link>
+                                    <Link className="text-white text-[17px] transition" href="#">Medium</Link>
                                 </li>
                                 <li>
                                     <Link className="text-white text-[17px] transition" href="#">Youtube</Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white text-[17px] transition" href="#">Medium</Link>
+                                    <Link className="text-white text-[17px] transition" href="#">Instagram</Link>
                                 </li>
                             </ul>
                         </div>
