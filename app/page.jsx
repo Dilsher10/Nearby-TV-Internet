@@ -38,7 +38,29 @@ export default function Home() {
         </div>
       </div>
 
-      
+      <section className="cardSec py-10 lg:py-20" id="service">
+        <div className="mx-auto w-screen max-w-screen-xl">
+          <h2 className="text-white text-2xl w-[350px] md:text-4xl lg:text-4xl font-bold text-center md:w-[700px] lg:w-[700px] mx-auto">Affordable internet built for streaming, gaming, and remote work.</h2>
+          <p className="text-gray-400 text-center px-4 lg:px-36 py-10">Experience lightning-fast internet with our reliable broadband services. As the leading provider, we offer seamless connectivity, ensuring you stay connected for work, entertainment, and more. Enjoy high-speed browsing, uninterrupted streaming, and exceptional customer support. </p>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 px-4">
+            <div className="rounded-3xl bg-[#343850] p-10 text-center cursor-pointer transition duration-500 ease-in-out hover:scale-110">
+              <img src="/003.png" className="mx-auto" />
+              <h3 className="text-white font-bold py-5">Cable TV Channels</h3>
+              <p className="text-gray-400 text-[15px] px-1">Curate your perfect viewing experience from a vast selection of channels tailored to your unique tastes and preferences.</p>
+            </div>
+            <div className="rounded-3xl bg-[#343850] p-10 text-center cursor-pointer transition duration-500 ease-in-out hover:scale-110">
+              <img src="/002.png" className="mx-auto" />
+              <h3 className="text-white font-bold py-5">Wi-Fi Services </h3>
+              <p className="text-gray-400 text-[15px] px-1">Assess your internet needs and ensure your home is equipped with the fastest download speed and to meet your demands.</p>
+            </div>
+            <div className="rounded-3xl bg-[#343850] p-10 text-center cursor-pointer transition duration-500 ease-in-out hover:scale-110">
+              <img src="/001.png" className="mx-auto" />
+              <h3 className="text-white font-bold py-5">Home Phone Solutions</h3>
+              <p className="text-gray-400 text-[15px] px-1">Simplify your services—bundle home phone, internet, and TV. Enjoy more savings, less hassle!</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="priceSec bg-primary py-10 lg:py-20" id="pricing">
         <div className="mx-auto w-screen max-w-screen-xl">
