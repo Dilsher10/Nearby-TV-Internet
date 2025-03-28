@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-24 items-center justify-between">
                     <Link className="block text-white font-bold text-2xl lg:text-3xl" href="/">
-                    WS DYNAMICS LLC
+                        WS DYNAMICS LLC
                     </Link>
                     <nav
                         className={`absolute md:static top-28 left-0 w-full md:w-auto bg-[#020106] md:bg-transparent md:flex items-center justify-center md:opacity-100 transition-opacity duration-300 ease-in-out ${isMenuOpen ? "opacity-100" : "opacity-0 md:opacity-100 pointer-events-none md:pointer-events-auto"
