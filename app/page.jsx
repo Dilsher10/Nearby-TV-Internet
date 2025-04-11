@@ -212,7 +212,92 @@ export default function Home() {
         <h2 className="text-white text-4xl lg:text-5xl font-bold w-[600px] mx-auto lg:leading-[60px]">Connecting with the world with best internet and TV services</h2>
       </section>
 
-      
+      <section className="bg-primary" id="contact">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 mx-auto max-w-screen-xl px-5 md:px-[4.4rem] md:py-20 py-10 lg:px-16 lg:py-20">
+          <div className="">
+            <h5 className="text-white font-bold">Contact Us</h5>
+            <h2 className="text-[20px] lg:text-[43px] font-bold text-white py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
+            <p className="text-white">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
+            <ul className="py-5 leading-[3]">
+              <li className="flex gap-2 items-center"><Phone className="text-white" /> <Link href="tel:+1-(877)653-3880" className="text-white">(877)653-3880</Link></li>
+              <li className="flex gap-2 items-center"><Mail className="text-white" /> <Link href="mailto:info@nearbytvinternet.com" className="text-white">info@nearbytvinternet.com</Link></li>
+              <li className="flex gap-2 items-center"><MapPin className="text-white" /> <p className="text-white">8750 Point Park Dr Houston TX 77095</p></li>
+            </ul>
+            <div className="flex gap-5">
+              <FacebookIcon className="bg-white rounded-md text-primary p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Twitter className="bg-white rounded-md text-primary p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+              <Youtube className="bg-white rounded-md text-primary p-1 w-8 h-8 cursor-pointer hover:scale-110 transition" />
+            </div>
+          </div>
+          <div className="">
+            <form className="grid grid-cols-6 gap-6">
+              <div className="col-span-6">
+                <input
+                  type="text"
+                  id="Name"
+                  name="name"
+                  placeholder="Name"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (/^[A-Za-z\s]*$/.test(value)) {
+                      setName(value);
+                    }
+                  }}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <input
+                  type="text"
+                  id="Phone"
+                  name="phone"
+                  placeholder="Phone"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (/^[\d+\-()]*$/.test(value)) {
+                      setPhone(value);
+                    }
+                  }}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <input
+                  type="email"
+                  id="Email"
+                  name="email"
+                  placeholder="Email"
+                  className="mt-1 w-full rounded-md border border-gray-700 bg-transparent text-sm text-white shadow-xs p-3"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="col-span-6">
+                <select id="Services" className="border border-gray-700 w-full p-3 rounded-md mt-1 text-gray-400 bg-primary" onChange={(e) => setService(e.target.value)}>
+                  <option value="Choose Service">Choose Service</option>
+                  <option value="Cable Internet">Cable Internet</option>
+                  <option value="Fiber Internet">Fiber Internet</option>
+                  <option value="Wireless">Wireless</option>
+                  <option value="TV Service">TV Service</option>
+                </select>
+              </div>
+              <div className="col-span-6">
+                <textarea id="Message" placeholder="Message" rows={4} className="text-white w-full border border-gray-700 bg-transparent p-3 rounded-md mt-1" onChange={(e) => setMessage(e.target.value)} required></textarea>
+              </div>
+
+              <div className="col-span-6">
+                <button
+                  className="inline-block shrink-0 rounded-md border border-gray-400 bg-transparent px-12 py-3 text-lg font-bold text-white transition hover:bg-secondary focus:ring-3 focus:outline-hidden" type="submit"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>
