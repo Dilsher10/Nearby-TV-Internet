@@ -22,10 +22,10 @@ export default function Home() {
             <div className="mt-5 flex gap-4 sm:mt-6">
               <a
                 className="inline-flex items-center gap-2 rounded-full border border-secondary bg-secondary px-8 py-3 text-white hover:bg-transparent hover:bg-primary hover:border-white"
-                href="tel:+1-(877)653-3880"
+                href="tel:+1-(877)930-0054"
               >
                 <Phone />
-                <span className="text-sm font-semibold"> (877) 653-3880 </span>
+                <span className="text-sm font-semibold"> (877) 930-0054 </span>
               </a>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 <p className="text-gray-400 mb-14 text-sm">*Tax included in pricing</p>
                 <a
                   className="block rounded-full border border-gray-400 bg-transparent px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-secondary"
-                  href="tel:+1-(877)653-3880"
+                  href="tel:+1-(877)930-0054"
                 >
                   Order Now
                 </a>
@@ -151,7 +151,7 @@ export default function Home() {
                 <p className="text-gray-400 mb-14 text-sm">*Tax included in pricing</p>
                 <a
                   className="block rounded-full border border-gray-400 bg-transparent px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-secondary"
-                  href="tel:+1-(877)653-3880"
+                  href="tel:+1-(877)930-0054"
                 >
                   Order Now
                 </a>
@@ -198,7 +198,7 @@ export default function Home() {
                 <p className="text-gray-400 mb-14 text-sm">*Tax included in pricing</p>
                 <a
                   className="block rounded-full border border-gray-400 bg-transparent px-3 py-1.5 lg:py-2.5 text-center text-lg font-bold text-white hover:bg-secondary"
-                  href="tel:+1-(877)653-3880"
+                  href="tel:+1-(877)930-0054"
                 >
                   Order Now
                 </a>
@@ -219,7 +219,7 @@ export default function Home() {
             <h2 className="text-[20px] lg:text-[43px] font-bold text-white py-7 leading-[1.2]">Connect with Us, Your Feedback Matters to Us.</h2>
             <p className="text-white">We value your input and inquiries. Please feel free to reach out to us. We’re here to assist you anytime you need us.</p>
             <ul className="py-5 leading-[3]">
-              <li className="flex gap-2 items-center"><Phone className="text-white" /> <Link href="tel:+1-(877)653-3880" className="text-white">(877)653-3880</Link></li>
+              <li className="flex gap-2 items-center"><Phone className="text-white" /> <Link href="tel:+1-(877)930-0054" className="text-white">(877)930-0054</Link></li>
               <li className="flex gap-2 items-center"><Mail className="text-white" /> <Link href="mailto:info@nearbytvinternet.com" className="text-white">info@nearbytvinternet.com</Link></li>
               <li className="flex gap-2 items-center"><MapPin className="text-white" /> <p className="text-white">8750 Point Park Dr Houston TX 77095</p></li>
             </ul>

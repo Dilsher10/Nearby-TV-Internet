@@ -38,10 +38,10 @@ const Navbar = () => {
                     <div className="hidden md:hidden lg:flex">
                         <a
                             className="inline-flex items-center gap-2 rounded-full border border-secondary bg-secondary px-8 py-3 text-white hover:bg-transparent hover:bg-primary hover:border-white"
-                            href="tel:+1-(877)653-3880"
+                            href="tel:+1-(877)930-0054"
                         >
                             <Phone />
-                            <span className="text-sm font-semibold"> (877) 653-3880 </span>
+                            <span className="text-sm font-semibold"> (877) 930-0054 </span>
                         </a>
                     </div>
                     <button
